@@ -1,0 +1,72 @@
+{
+  "name": "<%= appName %>",
+  "version": "0.0.1",
+  "author": {
+    "name": "etéreo",
+    "email": "hello@etereo.io",
+    "url": "http://etereo.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:etereo/<%= appName %>.git"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-angular-templates": "^1.0.4",
+    "grunt-autoprefixer": "3.0.4",
+    "grunt-cli": "1.2.0",
+    "grunt-concurrent": "2.2.1",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-compass": "1.1.1",
+    "grunt-contrib-concat": "1.0.0",
+    "grunt-contrib-connect": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-cssmin": "1.0.1",
+    "grunt-contrib-htmlmin": "1.2.0",
+    "grunt-contrib-imagemin": "1.0.0",
+    "grunt-contrib-jshint": "1.0.0",
+    "grunt-contrib-uglify": "1.0.1",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-filerev": "2.3.1",
+    "grunt-google-cdn": "0.4.3",
+    "grunt-include-source": "0.7.1",
+    "grunt-karma": "0.12.2",
+    "grunt-newer": "1.1.2",
+    "grunt-ng-annotate": "2.0.1",
+    "grunt-ng-constant": "2.0.1",
+    "grunt-protractor-runner": "3.1.0",
+    "grunt-release": "0.13.0",
+    "grunt-svgmin": "3.1.2",
+    "grunt-usemin": "3.1.1",
+    "grunt-version-check": "0.3.5",
+    "grunt-webtranslateit": "0.0.2",
+    "grunt-wiredep": "3.0.0",
+    "jasmine-core": "2.4.1",
+    "jshint-stylish": "2.1.0",
+    "karma": "0.13.22",
+    "karma-chrome-launcher": "0.2.3",
+    "karma-coverage": "0.5.5",
+    "karma-jasmine": "0.3.8",
+    "karma-phantomjs-launcher": "1.0.0",
+    "karma-spec-reporter": "0.0.25",
+    "load-grunt-tasks": "3.4.1",
+    "phantomjs-prebuilt": "2.1.7",
+    "serve-static": "1.10.2",
+    "time-grunt": "1.3.0"
+  },
+  "engines": {
+    "node": "~4.2.2"
+  },
+  "scripts": {
+    "postinstall": "bower install --force-latest",
+    "test": "grunt test",
+    "start": "grunt serve",
+    "clean": "rm -rf node_modules bower_components dist .sass-cache .tmp",
+    "reinstall": "npm run clean && npm install && bower install",
+    "reset": "npm run reinstall",
+    "webdriver": "webdriver-manager start"
+  }
+}
