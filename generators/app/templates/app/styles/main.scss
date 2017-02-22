@@ -1,16 +1,14 @@
-@import "compass/reset";
-@import "compass";
-@import "compass/layout/sticky-footer";
+@import "./_reset";
 @import "./_variables";
 @import "./_mixins";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 .browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 
